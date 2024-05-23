@@ -29,6 +29,7 @@
                         <a onclick="about()" id="navabout">About</a>
                         <a onclick="contact()" id="navcontact">Contact</a>
                         <a onclick="cart()" ><i class="ri-shopping-cart-2-fill" ></i> </a>
+                        <a id="cart-count">0</a>
                     </li>
 
                 </ul>
@@ -40,8 +41,8 @@
                         Super Value Deals
                     </h1>
                     <h1 class="anime">On All Products</h1>
-                    <p class="anime">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid!</p>
-                    <button class="anime">Explore</button>
+                    <p class="anime">Online Shopping Site for Fashion & Lifestyle In India</p>
+                    <button class="anime" onclick="shop()">Explore</button>
                 </div>
                 <img src="m3.png" alt="" class="anime">
             </div>
@@ -55,7 +56,7 @@
             <div class="card">
                 <div class="crd">
                     <img src="srt1.webp" alt="" onclick="show(this)">
-                    <h2>Cotton Trending Shirts</h2>
+                    <h2>Fancy Partywear Mens Shirts</h2>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -63,11 +64,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
-                    <button>Add to cart</button>
+                    <button id="addToCart">Add to cart</button>
                 </div>
                 <div class="crd">
                     <img src="srt2.webp" alt="" onclick="show(this)">
-                    <h2>Cotton Trending Shirts</h2>
+                    <h2>Pretty Modern Mens Shirts</h2>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -75,11 +76,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
-                    <button>Add to cart</button>
+                    <button id="addToCart">Add to cart</button>
                 </div>
                 <div class="crd">
                     <img src="srt6.webp" alt="" onclick="show(this)">
-                    <h2>Cotton Trending Shirts</h2>
+                    <h2>Trendy Glamorous Men Shirts</h2>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -87,7 +88,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
-                    <button>Add to cart</button>
+                    <button id="addToCart">Add to cart</button>
                 </div>
             </div>
 
@@ -100,7 +101,7 @@
             <div class="card">
                 <div class="crd">
                     <img src="wn4.webp" alt="" onclick="show(this)">
-                    <h2>Trending Girl Top's</h2>
+                    <h2>Urban Designer Women Tops</h2>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -108,11 +109,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
-                    <button>Add to cart</button>
+                    <button id="addToCart">Add to cart</button>
                 </div>
                 <div class="crd">
                     <img src="wn5.webp" alt="" onclick="show(this)">
-                    <h2>Trending Girl Top's</h2>
+                    <h2>Pretty Fabulous Women Tops</h2>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -120,11 +121,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
-                    <button>Add to cart</button>
+                    <button id="addToCart">Add to cart</button>
                 </div>
                 <div class="crd">
                     <img src="wn6.webp" alt="" onclick="show(this)">
-                    <h2>Trending Girl Top's</h2>
+                    <h2>Classic Elegent Women Tops</h2>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -132,7 +133,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
-                    <button>Add to cart</button>
+                    <button id="addToCart">Add to cart</button>
                 </div>
             </div>
 
@@ -191,10 +192,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, unde.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, magnam.</p>
                 <div class="btn">
-                    <button>Buy Now</button>
-                    <button onclick="addCart()">Add to Cart</button>
+                    <button >Buy Now</button>
+                    <button id="addToCart">Add to Cart</button>
                 </div>
-                <button class="back">Back</button>
+                <button class="back" onclick="back()">Back</button>
             </div>
         </div>
         <!-- blog -->
@@ -208,8 +209,8 @@
                     <div class="blog">
                         <img src="tr1.webp" alt="">
                         <div class="blogText">
-                            <h2>Trending Girl Cloths</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nihil eligendi unde!</p>
+                            <h2>Trending Girl Clothes</h2>
+                            <p>Latest Designer Girls Top Design | 30 Must Have Designer Tops For Girls in 2024....</p>
                             <a href="https://www.bewakoof.com/blog/latest-designer-girls-top-design/">Read More</a>
                         </div>
                     </div>
@@ -218,8 +219,8 @@
                     <div class="blog">
                         <img src="tr3.webp" alt="">
                         <div class="blogText">
-                            <h2>Trending Boys Cloths</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nihil eligendi unde!</p>
+                            <h2>Trending Boys Clothes</h2>
+                            <p>Explore the new collection of apparel for men along with various color, shades, ...</p>
                             <a href="https://bambinifashion.com/blog/boys-clothes">Read More</a>
                         </div>
                     </div>

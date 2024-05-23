@@ -5,7 +5,28 @@ let blog1 = document.querySelector(".trends")
 let contactus = document.querySelector(".contact")
 let aboutus = document.querySelector(".about")
 
+// -> SUMIT: defining the addToCart Button
+// Initialize the cart count
+let cartCount = 0;
 
+// Select all 'Add to Cart' buttons
+let addToCartButtons = document.querySelectorAll("#addToCart");
+
+// Convert NodeList to an Array
+addToCartButtons = Array.from(addToCartButtons);
+
+// Function to handle 'Add to Cart' button click
+function addToCart() {
+    cartCount++;
+    // Update the cart count display
+    document.getElementById('cart-count').innerText = cartCount;
+    console.log(`Cart count: ${cartCount}`);
+}
+
+// Attach event listener to each button
+addToCartButtons.forEach(button => {
+    button.addEventListener("click", addToCart);
+});
 
 
 let navabout = document.querySelector("#navabout");
@@ -145,7 +166,7 @@ card2.style.display = "none";
 homepage.style.display = "none"
 
 }
-function addCart(){
-    alert("Item Added to Cart");
+function back(){
+
     location.reload();
 }

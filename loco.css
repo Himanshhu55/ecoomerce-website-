@@ -64,3 +64,16 @@ html.has-scroll-smooth {
     [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
       right: auto;
       bottom: 0; }
+
+/* -> SUMIT: Style for the cart count badge */
+#cart-count {
+    background-color: rgb(206, 37, 37);
+    color: white;
+    border-radius: 50%;
+    padding-inline: 8px;
+}
+
+/* Additional styles for buttons in the cart section */
+.cart .btn button {
+    margin-right: 10px;
+}
