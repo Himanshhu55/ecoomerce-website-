@@ -5,6 +5,8 @@ let blog1 = document.querySelector(".trends")
 let contactus = document.querySelector(".contact")
 let aboutus = document.querySelector(".about")
 
+
+// initializing form by getting thier Id's
 let fname = document.getElementById("fname");
 let lname = document.getElementById("lname");
 let phone = document.getElementById("phone");
@@ -12,7 +14,7 @@ let address = document.getElementById("address");
 let email = document.getElementById("email")
 
 function data(){
-
+// Validating form entries
     if(fname.value=="" || lname.value=="" || phone.value=="" || address.value=="" || email.value==""){
         alert("All field are Mandotary");
         return false;
@@ -29,6 +31,7 @@ function data(){
     else{
         true;
     }
+    // Storing form data into local storage
     localStorage.setItem('Is_first_name',fname.value);
     localStorage.setItem('Is_last_name',lname.value);
     localStorage.setItem('Is_phone',phone.value);
