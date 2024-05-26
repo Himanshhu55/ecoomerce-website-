@@ -12,6 +12,7 @@ let address = document.getElementById("address");
 let email = document.getElementById("email")
 
 function data(){
+
     if(fname.value=="" || lname.value=="" || phone.value=="" || address.value=="" || email.value==""){
         alert("All field are Mandotary");
         return false;
@@ -28,6 +29,12 @@ function data(){
     else{
         true;
     }
+    localStorage.setItem('Is_first_name',fname.value);
+    localStorage.setItem('Is_last_name',lname.value);
+    localStorage.setItem('Is_phone',phone.value);
+    localStorage.setItem('Is_address',address.value);
+    localStorage.setItem('Is_email',email.value);
+    
 }
 
 // -> SUMIT: defining the addToCart Button
