@@ -5,6 +5,31 @@ let blog1 = document.querySelector(".trends")
 let contactus = document.querySelector(".contact")
 let aboutus = document.querySelector(".about")
 
+let fname = document.getElementById("fname");
+let lname = document.getElementById("lname");
+let phone = document.getElementById("phone");
+let address = document.getElementById("address");
+let email = document.getElementById("email")
+
+function data(){
+    if(fname.value=="" || lname.value=="" || phone.value=="" || address.value=="" || email.value==""){
+        alert("All field are Mandotary");
+        return false;
+    }else if(phone.value.length<10|| phone.value.lenth>10){
+        alert("Please Enter A valid contact Number");
+        return false;
+    }else if(isNaN(phone.value)){
+        alert("Only numbers are Allowed.Please Enter a valid Number");
+        return false;
+    }else if(!email.value.includes("@gmail.com")){
+        alert("please enter a valid email")
+        return false
+    }
+    else{
+        true;
+    }
+}
+
 // -> SUMIT: defining the addToCart Button
 // Initialize the cart count
 let cartCount = 0;
